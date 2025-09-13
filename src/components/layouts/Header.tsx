@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { HiOutlineHandRaised } from "react-icons/hi2";
+import { MainNav } from "@/components/navigations/MainNav";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
-    <header className="max-w-7xl flex items-center justify-between mx-auto p-3 fixed top-0 right-0 left-0">
+    <header className="max-w-7xl flex items-center justify-between mx-auto p-3 fixed top-0 right-0 left-0 z-50">
       {/* LOGO */}
       <Link
         href="/"
@@ -13,6 +14,9 @@ export function Header() {
       >
         DIM.
       </Link>
+
+      {/* NAVBAR */}
+      <MainNav />
 
       {/* CONTACT ME BUTTON */}
       <Button
