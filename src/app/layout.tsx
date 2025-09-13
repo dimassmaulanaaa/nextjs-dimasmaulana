@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { user } from "@/data/user";
+import { Header } from "@/components/layouts/Header";
+import { Footer } from "@/components/layouts/Footer";
 
 const fontHeading = Space_Grotesk({
   variable: "--font-heading",
@@ -98,7 +100,11 @@ export default function RootLayout({
       <body
         className={`${fontHeading.variable} ${fontBody.variable} antialiased`}
       >
+        <Header />
+
         {children}
+
+        <Footer />
       </body>
     </html>
   );
