@@ -89,6 +89,30 @@ body {
   font-family: var(--font-body), Arial, Helvetica, sans-serif;
 }
 
+#about {
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--custom-gradient), 0),
+    rgba(var(--custom-gradient), 0.09),
+    rgba(var(--custom-gradient), 0.03),
+    rgba(var(--custom-gradient), 0.09),
+    rgba(var(--custom-gradient), 0)
+  );
+}
+
+#project-section {
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--custom-gradient), 0),
+    rgba(var(--custom-gradient), 0.03),
+    rgba(var(--custom-gradient), 0.06),
+    rgba(var(--custom-gradient), 0.09),
+    rgba(var(--custom-gradient), 0.06),
+    rgba(var(--custom-gradient), 0.03),
+    rgba(var(--custom-gradient), 0)
+  );
+}
+
 h1,
 h2,
 h3,
